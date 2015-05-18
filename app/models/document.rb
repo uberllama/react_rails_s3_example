@@ -41,7 +41,7 @@ class Document < ActiveRecord::Base
 
   has_attached_file :upload
 
-  validates :direct_upload_url, presence: true
+  validates :direct_upload_url, presence: true, format: { with: DIRECT_UPLOAD_URL_FORMAT }
   do_not_validate_attachment_file_type :upload
 
 end
