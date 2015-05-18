@@ -1,5 +1,7 @@
 Companion code to my blog post on uploading to S3 with React, Rails, and Paperclip.
 
+<http://blog.littleblimp.com/post/119230396893/direct-uploads-to-s3-with-react-rails-and-paperclip>
+
 Do it:
 
 1. Clone
