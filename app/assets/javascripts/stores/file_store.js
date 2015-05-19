@@ -21,7 +21,7 @@ var FileStore = (function($) {
     .then(function(downloadUrl) {
       return saveResource(file, downloadUrl, callbacks);
     });
-  }
+  };
 
   // private
 
@@ -34,7 +34,7 @@ var FileStore = (function($) {
         upload: { filename: file.name }
       }
     });
-  }
+  };
 
   var uploadFile = function(file, uploadUrl, contentType, callbacks) {
     var deferred = $.Deferred();
@@ -65,7 +65,7 @@ var FileStore = (function($) {
     xhr.send(file);
 
     return deferred.promise();
-  }
+  };
 
   var saveResource = function(file, downloadUrl, callbacks) {
     return $.ajax({
@@ -81,11 +81,11 @@ var FileStore = (function($) {
         }
       }
     });
-  }
+  };
 
   return {
     getResources:   getResources,
     createResource: createResource
-  }
+  };
 
 })(jQuery);
